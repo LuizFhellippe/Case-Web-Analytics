@@ -1,0 +1,8 @@
+SELECT broken_database_1.c1 AS data_venda,
+broken_database_1.c2 AS id_marca,
+broken_database_1.c3 AS quantidade,
+broken_database_1.c4 AS valor,
+broken_database_1.c5 AS nome_modelo,
+broken_database_2.c2 AS nome_marca
+FROM broken_database_1 INNER JOIN broken_database_2 ON broken_database_1.c2 = broken_database_2.c1
+ORDER BY broken_database_2.C1, broken_database_1.c5
